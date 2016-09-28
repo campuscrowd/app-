@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_YHXX" queryOrder="" type="table">
+    <item caption="WID" colName="WID" groupName="" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="职工号" colName="ZGH" groupName="" length="50" name="ZGH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="姓名" colName="XM" groupName="" length="20" name="XM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位" colName="SZDWD" groupName="" length="40" name="SZDWD" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="ede38792-0ae4-4b08-b63f-5227ea879f29"/>
+    </item>
+    <item caption="手机号" colName="SJH" groupName="" length="20" name="SJH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

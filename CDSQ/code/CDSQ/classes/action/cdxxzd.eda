@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="场地信息字典" conditionIndex="" displayRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDXX" displayRefInclude="WID,CDMC,SFKF" displayRefPath="src/datamodel/sj/T_CDSQ_CDXX.edm" displayRefPrj="cdsq" name="cdxxzd" paramFixRef="" paramFixRefInclude="SFKF" paramFixRefPath="" paramFixRefPrj="" paramRef="" paramRefInclude="SFKF" paramRefPath="" paramRefPrj="" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from T_CDSQ_CDXX where SFKF='1'&#xD;
+union all&#xD;
+select WID,'该场地已关闭' as CDMC,MJXX,SFKF from T_CDSQ_CDXX where SFKF='2'</sql>
+  </actionModel>
+</model:Model>

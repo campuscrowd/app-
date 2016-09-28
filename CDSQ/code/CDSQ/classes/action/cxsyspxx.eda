@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="查询所有审批信息" displayRef="biz:syspxx" displayRefInclude="SHSJ,SFTY,SHYJ,SHR,SPHJ" displayRefPath="src/parammodel/syspxx.epm" displayRefPrj="CDSQ" name="cxsyspxx" paramFixRef="biz:syspxx" paramFixRefInclude="SQBH,SQBH_1,SQBH_2,SQBH_3,SQBH_4,SQBH_5,SQBH_6" paramFixRefPath="src/parammodel/syspxx.epm" paramFixRefPrj="CDSQ" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>SELECT SHSJ,SFTY,SHYJ,SHR,'2' AS SPHJ FROM T_CDSQ_XGCLDSP WHERE SQBH = ?&#xD;
+UNION ALL&#xD;
+SELECT SHSJ,SFTY,SHYJ,SHR,'3' AS SPHJ FROM T_CDSQ_STZDLSSP WHERE SQBH = ?&#xD;
+UNION ALL&#xD;
+SELECT SHSJ,SFTY,SHYJ,SHR,'4' AS SPHJ FROM T_CDSQ_AQFZRSP WHERE SQBH = ?&#xD;
+UNION ALL&#xD;
+SELECT SHSJ,SFTY,SHYJ,SHR,'5' AS SPHJ FROM T_CDSQ_TWFZRSP WHERE SQBH = ?&#xD;
+UNION ALL&#xD;
+SELECT SHSJ,SFTY,SHYJ,SHR,'6' AS SPHJ FROM T_CDSQ_BWCSP WHERE SQBH = ?&#xD;
+UNION ALL&#xD;
+SELECT SHSJ,SFTY,SHYJ,SHR,'7' AS SPHJ FROM T_CDSQ_BWCLDSP WHERE SQBH = ?&#xD;
+UNION ALL&#xD;
+SELECT SQSJ ,'','',ZRR,'1' AS SPHJ FROM T_CDSQ_CDSQB WHERE SQBH = ?</sql>
+  </actionModel>
+</model:Model>

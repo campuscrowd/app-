@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_CDXX" queryOrder="" type="table">
+    <item caption="WID" colName="WID" foreignName="" groupName="" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="场地名称" colName="CDMC" foreignName="" groupName="" length="50" name="CDMC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="面积信息" colName="MJXX" groupName="" length="50" name="MJXX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="是否开放" colName="SFKF" foreignName="" groupName="" length="1" name="SFKF" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="radiolist"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

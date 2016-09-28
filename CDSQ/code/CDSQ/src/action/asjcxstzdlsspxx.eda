@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="按时间查询社团指导老师审批信息" conditionIndex="" displayRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_STZDLSSP" displayRefInclude="SFTY,SHYJ,SHR,SHSJ" displayRefPath="src/datamodel/sj/T_CDSQ_STZDLSSP.edm" displayRefPrj="cdsq" name="asjcxstzdlsspxx" paramFixRef="" paramFixRefInclude="WID,SQBH,SFTY,SHYJ,SHR,SHSJ" paramFixRefPath="" paramFixRefPrj="" paramRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_STZDLSSP" paramRefInclude="WID,SQBH,SFTY,SHYJ,SHR,SHSJ" paramRefPath="src/datamodel/sj/T_CDSQ_STZDLSSP.edm" paramRefPrj="cdsq" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from T_CDSQ_STZDLSSP&#xD;
+#sub[where $]&#xD;
+order by SHSJ desc</sql>
+  </actionModel>
+</model:Model>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="T_CDSQ_XGCLDSPFB" order="WID,SQBH,SFTY,SHYJ,SHR,SHSJ">
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_XGCLDSP.edm" include="WID:WID,SQBH:SQBH,SFTY:SFTY,SHYJ:SHYJ,SHR:SHR,SHSJ:SHSJ" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_XGCLDSP" prjRef="cdsq" tableAlias="T_CDSQ_XGCLDSP">
+      <item groupName="" name="WID" originName="WID">
+        <attribute name="web.hidden" value="true"/>
+      </item>
+      <item groupName="" name="SQBH" originName="SQBH">
+        <attribute name="web.hidden" value="true"/>
+      </item>
+      <item groupName="" name="SFTY" originName="SFTY">
+        <attribute name="useDicType" value="toDisplay"/>
+        <attribute name="web.xtype" value="buttonlist"/>
+        <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="dic" value="5f39ccf7-3133-438a-883d-da91b2fb4a60"/>
+      </item>
+      <item groupName="" name="SHYJ" originName="SHYJ">
+        <attribute name="web.hidden" value="true"/>
+      </item>
+      <item groupName="" name="SHR" originName="SHR">
+        <attribute name="web.grid.hidden" value="true"/>
+      </item>
+      <item groupName="" name="SHSJ" originName="SHSJ">
+        <attribute name="web.hidden" value="true"/>
+      </item>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

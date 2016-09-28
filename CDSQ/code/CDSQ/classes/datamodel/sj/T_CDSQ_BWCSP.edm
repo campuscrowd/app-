@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_BWCSP" queryOrder="" type="table">
+    <item caption="WID" colName="WID" groupName="保卫处审批" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="申请编号" colName="SQBH" foreignName="" groupName="保卫处审批" length="50" name="SQBH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="是否同意" colName="SFTY" foreignName="" groupName="保卫处审批" length="1" name="SFTY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.readonly" value="true"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="5f39ccf7-3133-438a-883d-da91b2fb4a60"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="审核意见" colName="SHYJ" foreignName="" groupName="保卫处审批" length="120" name="SHYJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="textarea"/>
+    </item>
+    <item caption="审核人" colName="SHR" foreignName="" groupName="保卫处审批" length="40" name="SHR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.readonly" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="审核时间" colName="SHSJ" foreignName="" groupName="保卫处审批" length="40" name="SHSJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.readonly" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="是否加批" colName="SFJP" foreignName="" groupName="保卫处审批" length="1" name="SFJP" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+      <attribute name="web.xtype" value="radiolist"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

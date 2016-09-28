@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="shyj" order="SHYJ,SFJP">
+    <item caption="审核意见" colName="SHYJ" custom="true" groupName="" length="120" name="SHYJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="textarea"/>
+    </item>
+    <item caption="是否加批" colName="SFJP" custom="true" length="1" name="SFJP" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+      <attribute name="web.xtype" value="radiolist"/>
+    </item>
+  </bizModel>
+</model:Model>

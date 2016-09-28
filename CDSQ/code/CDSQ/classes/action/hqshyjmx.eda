@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="获取审核意见模型" displayRef="biz:shyj" displayRefInclude="SHYJ,SFJP" displayRefPath="src/parammodel/shyj.epm" displayRefPrj="CDSQ" name="hqshyjmx" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from T_CDSQ_SPZT</sql>
+  </actionModel>
+</model:Model>

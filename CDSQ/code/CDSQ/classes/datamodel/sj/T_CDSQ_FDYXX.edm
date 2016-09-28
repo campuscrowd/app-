@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_FDYXX" queryOrder="" type="table">
+    <item caption="WID" colName="WID" groupName="" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="学号" colName="XH" groupName="" length="50" name="XH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="辅导员工号" colName="FDYGH" groupName="" length="50" name="FDYGH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="辅导员姓名" colName="FDYXM" groupName="" length="30" name="FDYXM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

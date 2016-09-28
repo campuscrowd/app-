@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="按时间查询安全负责人审批信息" displayRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_AQFZRSP" displayRefInclude="WID,SQBH,SFTY,SHYJ,SHR,SHSJ" displayRefPath="src/datamodel/sj/T_CDSQ_AQFZRSP.edm" displayRefPrj="cdsq" name="asjcxaqfzrspxx" paramRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_AQFZRSP" paramRefInclude="SQBH,SFTY,SHYJ,SHR,SHSJ" paramRefPath="src/datamodel/sj/T_CDSQ_AQFZRSP.edm" paramRefPrj="cdsq" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from T_CDSQ_AQFZRSP&#xD;
+#sub[where $]&#xD;
+order by SHSJ desc</sql>
+  </actionModel>
+</model:Model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="ea065ae7-b9b8-4233-ac71-74330c1a61ce">
+    <item name="HDRQ" type="String"/>
+    <item caption="" length="40" name="HDDD" type="String"/>
+  </bizModel>
+  <actionModel caption="获取已通过申请数量" displayRef="biz:tgsqsl" displayRefInclude="SQSL" displayRefPath="src/parammodel/tgsqsl.epm" displayRefPrj="CDSQ" name="hqytgsqsl" paramFixRef="ea065ae7-b9b8-4233-ac71-74330c1a61ce" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>SELECT COUNT(SQBH) AS SQSL FROM  (SELECT  T_CDSQ_SPZT.SQBH,T_CDSQ_CDSQB.SQDW,T_CDSQ_CDSQB.ZRR,T_CDSQ_CDSQB.SQSJ,T_CDSQ_CDSQB.HDRQ,T_CDSQ_CDSQB.HDSJ,T_CDSQ_SPZT.DQZT,T_CDSQ_CDSQB.HDDD,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SQSJ DESC ) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH &#xD;
+)WHERE RN &lt;= 1 &#xD;
+ and HDRQ=?  and HDDD=?</sql>
+  </actionModel>
+</model:Model>

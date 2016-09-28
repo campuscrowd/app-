@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="index" desc="index" permissionLevel="">
+    <params>
+      <param name="username" from="env:custom.currentUserId"/>
+      <param name="role" from="env:custom.currentRole"/>
+      <param name="time" from="env:custom.currentDatetimeString"/>
+    </params>
+    <actions>
+      <action name="T_CDSQ_YHXX_QUERY" ref="model:T_CDSQ_YHXX.QUERY" url="src/datamodel/sj/T_CDSQ_YHXX.edm" multiple="false" prjRef="CDSQ" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

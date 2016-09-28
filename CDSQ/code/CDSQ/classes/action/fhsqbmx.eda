@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="返回申请表模型" displayRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" displayRefInclude="SQBH,SQDW,ZRR,LXFS,HDDD,HDNR,HDRQ,HDSJ,HDLX,ZYMJ,ZYPSL,ZBSLJCC,QTYQ,SQRGH,FDY,SQSJ" displayRefPath="src/datamodel/sj/T_CDSQ_CDSQB.edm" displayRefPrj="CDSQ" name="fhsqbmx" paramRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" paramRefInclude="SQBH" paramRefPath="src/datamodel/sj/T_CDSQ_CDSQB.edm" paramRefPrj="CDSQ" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from T_CDSQ_CDSQB&#xD;
+#sub[where $]&#xD;
+order by SQSJ desc</sql>
+  </actionModel>
+</model:Model>

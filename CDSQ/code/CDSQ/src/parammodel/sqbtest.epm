@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="sqbtest" order="WID,SQBH,ZRR,LXFS,ZYMJ,ZYPSL,ZBSLJCC,QTYQ,DQZT,SFTH,SBWZ,HDSJ,SQDW,SQRGH,HDNR,HDDD,HDRQ,HDLX,SQSJ,SFBL,FDY">
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_CDSQB.edm" include="WID:WID,SQBH:SQBH,ZRR:ZRR,LXFS:LXFS,ZYMJ:ZYMJ,ZYPSL:ZYPSL,ZBSLJCC:ZBSLJCC,QTYQ:QTYQ,HDSJ:HDSJ" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" prjRef="cdsq" tableAlias="T_CDSQ_CDSQB">
+      <item groupName="" name="WID" originName="WID"/>
+      <item groupName="" name="SQBH" originName="SQBH"/>
+      <item caption="申请人" groupName="" name="ZRR" originName="ZRR"/>
+      <item groupName="" name="LXFS" originName="LXFS"/>
+      <item groupName="" name="ZYMJ" originName="ZYMJ"/>
+      <item groupName="" name="ZYPSL" originName="ZYPSL"/>
+      <item groupName="" name="ZBSLJCC" originName="ZBSLJCC"/>
+      <item groupName="" name="QTYQ" originName="QTYQ"/>
+      <item groupName="场地申请" name="HDSJ" originName="HDSJ"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_SPZT.edm" include="DQZT:DQZT,SFTH:SFTH,SBWZ:SBWZ" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_SPZT" prjRef="cdsq" tableAlias="T_CDSQ_SPZT">
+      <item caption="当前状态" groupName="" name="DQZT" originName="DQZT">
+        <attribute name="useDicType" value="toDisplay"/>
+        <attribute name="web.xtype" value="select"/>
+        <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="dic" value="29dca74f-faf4-431f-abb6-1d9f3af322e1"/>
+      </item>
+      <item groupName="" name="SFTH" originName="SFTH">
+        <attribute name="useDicType" value="toDisplay"/>
+        <attribute name="web.xtype" value="select"/>
+        <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+        <attribute name="web.grid.hidden" value="true"/>
+      </item>
+      <item groupName="" name="SBWZ" originName="SBWZ">
+        <attribute name="web.grid.hidden" value="true"/>
+      </item>
+    </dataModelRef>
+    <item caption="申请人部门" colName="SQDW" custom="true" length="40" name="SQDW" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="select"/>
+      <attribute name="builder" value="equal"/>
+      <attribute name="dic" value="ede38792-0ae4-4b08-b63f-5227ea879f29"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="select"/>
+    </item>
+    <item caption="申请人工号" colName="SQRGH" custom="true" length="40" name="SQRGH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="活动内容" colName="HDNR" custom="true" length="300" name="HDNR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.xtype" value="textarea"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+    </item>
+    <item caption="活动地点" colName="HDDD" custom="true" length="100" name="HDDD" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="5d62da6e-8d68-4472-bcf6-4d88e04c90aa"/>
+    </item>
+    <item caption="活动日期" colName="HDRQ" custom="true" length="40" name="HDRQ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-local"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+    </item>
+    <item caption="活动类型" colName="HDLX" custom="true" length="1" name="HDLX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="31711ef1-15a5-4684-a8fd-897390b945e1"/>
+      <attribute name="builder" value="include"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.xtype" value="buttonlist"/>
+    </item>
+    <item caption="申请时间" colName="SQSJ" custom="true" length="40" name="SQSJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="builder" value="two_include"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-local"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.form.readonly" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+    </item>
+    <item caption="是否办理" colName="SFBL" custom="true" length="1" name="SFBL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="builder" value="equal"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="buttonlist"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.search.xtype" value="buttonlist"/>
+      <attribute name="web.xtype" value="buttonlist"/>
+    </item>
+    <item caption="辅导员" colName="FDY" custom="true" length="40" name="FDY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="builder" value="equal"/>
+    </item>
+  </bizModel>
+</model:Model>

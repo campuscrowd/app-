@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_CDSQB" queryOrder="" type="table">
+    <item caption="WID" colName="WID" groupName="场地申请" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="申请编号" colName="SQBH" groupName="场地申请" length="50" name="SQBH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+    </item>
+    <item caption="申请单位" colName="SQDW" foreignName="" groupName="场地申请" length="40" name="SQDW" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.readonly" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="ede38792-0ae4-4b08-b63f-5227ea879f29"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="责任人" colName="ZRR" groupName="场地申请" length="40" name="ZRR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.readonly" value="true"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="联系方式" colName="LXFS" foreignName="" groupName="场地申请" length="40" name="LXFS" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="活动内容" colName="HDNR" groupName="场地申请" length="300" name="HDNR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="textarea"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+      <attribute name="web.search.xtype" value="text"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="活动日期" colName="HDRQ" foreignName="" groupName="场地申请" length="40" name="HDRQ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-local"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="活动时间" colName="HDSJ" groupName="场地申请" length="40" name="HDSJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.xtype" value="number-range"/>
+    </item>
+    <item caption="活动地点" colName="HDDD" foreignName="" groupName="场地申请" length="100" name="HDDD" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="5d62da6e-8d68-4472-bcf6-4d88e04c90aa"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="占用面积" colName="ZYMJ" foreignName="" groupName="场地申请" length="20" name="ZYMJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="text"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="遮阳棚数量" colName="ZYPSL" foreignName="" groupName="场地申请" length="20" name="ZYPSL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="text"/>
+      <attribute name="web.checkType" value="custom[integer]"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="展板（横幅）数量及尺寸" colName="ZBSLJCC" foreignName="" groupName="场地申请" length="100" name="ZBSLJCC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="text"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="其他要求" colName="QTYQ" groupName="场地申请" length="600" name="QTYQ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="textarea"/>
+    </item>
+    <item caption="活动类型" colName="HDLX" foreignName="" groupName="场地申请" length="2" name="HDLX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="radiolist"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="31711ef1-15a5-4684-a8fd-897390b945e1"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="申请时间" colName="SQSJ" foreignName="" groupName="场地申请" length="40" name="SQSJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="defaultValue" value="env:custom.currentDatetime"/>
+      <attribute name="web.form.readonly" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-local"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="申请人工号" colName="SQRGH" foreignName="" groupName="场地申请" length="20" name="SQRGH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="辅导员" colName="FDY" groupName="场地申请" length="40" name="FDY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="builder" value="equal"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

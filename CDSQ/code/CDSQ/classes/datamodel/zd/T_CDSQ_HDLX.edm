@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_HDLX" queryOrder="" type="table">
+    <item caption="WID" colName="WID" groupName="" length="40" name="WID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="代码" colName="DM" groupName="" length="10" name="DM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="名称" colName="MC" groupName="" length="180" name="MC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="排序" colName="PX" groupName="" length="" name="PX" type="double">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否使用" colName="SFSY" groupName="" length="" name="SFSY" type="double">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="发布情况" colName="FBQK" groupName="" length="" name="FBQK" type="double">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="原标准代码" colName="YBZDM" groupName="" length="10" name="YBZDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="起始使用日期" colName="QSSYRQ" groupName="" length="7" name="QSSYRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="终止使用日期" colName="ZZSYRQ" groupName="" length="7" name="ZZSYRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="标准来源" colName="BZLY" groupName="" length="10" name="BZLY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用2" colName="BY2" groupName="" length="90" name="BY2" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作类型" colName="CZLX" groupName="" length="10" name="CZLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用1" colName="BY1" groupName="" length="90" name="BY1" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="数据来源" colName="SJLY" groupName="" length="20" name="SJLY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="处理日期" colName="CLRQ" groupName="" length="7" name="CLRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

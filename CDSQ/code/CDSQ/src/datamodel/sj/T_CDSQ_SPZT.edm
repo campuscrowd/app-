@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_CDSQ_BIZ_BASE">
+  <dataModel name="T_CDSQ_SPZT" queryOrder="" type="table">
+    <item caption="WID" colName="WID" foreignName="" groupName="" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="申请编号" colName="SQBH" foreignName="" groupName="" length="50" name="SQBH" pK="false" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="当前位置" colName="DQZT" groupName="" length="2" name="DQZT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="29dca74f-faf4-431f-abb6-1d9f3af322e1"/>
+    </item>
+    <item caption="是否退回" colName="SFTH" groupName="" length="3" name="SFTH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+    </item>
+    <item caption="是否办理" colName="SFBL" groupName="" length="3" name="SFBL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="fbee42b7-d3f9-4b86-bfa5-daa3ebf5b602"/>
+    </item>
+    <item caption="失败位置" colName="SBWZ" groupName="" length="2" name="SBWZ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="dic" value="afe86742-a878-480e-a781-a69597014fe7"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

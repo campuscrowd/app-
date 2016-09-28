@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="查看申请列表" conditionIndex="1,2,3" displayRef="biz:sqbtest" displayRefInclude="SQSJ,ZRR,SQDW,HDLX,HDNR,DQZT,SFTH,SBWZ,SFBL,SQBH" displayRefPath="src/parammodel/sqbtest.epm" displayRefPrj="CDSQ" name="cksqlb" paramRef="biz:sqbtest" paramRefInclude="WID,HDNR,SQBH,ZRR,SQDW,LXFS,HDRQ,HDDD,HDLX,SQSJ,SQRGH,DQZT,SFTH,SFBL,SBWZ" paramRefPath="src/parammodel/sqbtest.epm" paramRefPrj="CDSQ" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>with s1 as (SELECT * FROM  (SELECT T_CDSQ_CDSQB.SQBH,DQZT,SFTH,SFBL,ZRR,HDNR,HDRQ,HDSJ,HDLX,HDDD,SQSJ,SBWZ,SQRGH,SQDW,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SQSJ DESC) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH)WHERE RN &lt;= 1 and SFBL='2' and DQZT='1'&#xD;
+#sub[and $]&#xD;
+ORDER BY SQSJ DESC ),&#xD;
+s2 as (SELECT * FROM  (SELECT T_CDSQ_CDSQB.SQBH,DQZT,SFTH,SFBL,ZRR,HDNR,HDRQ,HDSJ,HDLX,HDDD,SQSJ,SBWZ,SQRGH,SQDW,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SQSJ DESC) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH)WHERE RN &lt;= 1 and SFBL='2' and DQZT>'1'&#xD;
+#sub[and $]&#xD;
+ORDER BY SQSJ DESC ),&#xD;
+s3 as (&#xD;
+SELECT * FROM  (SELECT T_CDSQ_CDSQB.SQBH,DQZT,SFTH,SFBL,ZRR,HDNR,HDRQ,HDSJ,HDLX,HDDD,SQSJ,SBWZ,SQRGH,SQDW,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SQSJ DESC) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH)WHERE RN &lt;= 1 and SFBL='1'&#xD;
+#sub[and $]&#xD;
+ORDER BY SQSJ DESC&#xD;
+)&#xD;
+select * from s1&#xD;
+union all&#xD;
+select * from s2&#xD;
+union all&#xD;
+select * from s3&#xD;
+</sql>
+  </actionModel>
+</model:Model>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="社团指导老师查看列表" conditionIndex="1,2" displayRef="biz:sqbtest" displayRefInclude="SQSJ,ZRR,SQDW,HDNR,DQZT,SFTH,SFBL,SBWZ,SQBH,FDY" displayRefPath="src/parammodel/sqbtest.epm" displayRefPrj="CDSQ" name="stzdlscklb" paramRef="biz:sqbtest" paramRefInclude="SQBH,HDNR,ZRR,HDRQ,HDSJ,HDDD,SQSJ,SFTH,SFBL,SQDW,FDY" paramRefPath="src/parammodel/sqbtest.epm" paramRefPrj="CDSQ" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>with s1 as (SELECT * FROM  (SELECT T_CDSQ_SPZT.SQBH,DQZT,SFTH,SFBL,SBWZ,HDRQ,HDDD,ZYMJ,ZYPSL,SQSJ,ZBSLJCC,ZRR,SQDW,LXFS,HDSJ,HDLX,HDNR,FDY,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SHSJ,SQSJ DESC ) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH &#xD;
+left join T_CDSQ_STZDLSSP on T_CDSQ_SPZT.SQBH=T_CDSQ_STZDLSSP.SQBH)WHERE RN &lt;= 1 and DQZT='3' &#xD;
+#sub[and $]&#xD;
+ORDER BY SQSJ DESC),&#xD;
+s2 as (SELECT * FROM  (SELECT T_CDSQ_SPZT.SQBH,DQZT,SFTH,SFBL,SBWZ,HDRQ,HDDD,ZYMJ,ZYPSL,SQSJ,ZBSLJCC,ZRR,SQDW,LXFS,HDSJ,HDLX,HDNR,FDY,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SHSJ,SQSJ DESC ) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH &#xD;
+left join T_CDSQ_STZDLSSP on T_CDSQ_SPZT.SQBH=T_CDSQ_STZDLSSP.SQBH)WHERE RN &lt;= 1 and DQZT>'3' and HDLX ='1' &#xD;
+#sub[and $]&#xD;
+ORDER BY SQSJ DESC)&#xD;
+select * from s1&#xD;
+union all&#xD;
+select * from s2</sql>
+  </actionModel>
+</model:Model>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eterna-config xmlns="https://github.com/micromagic/eterna"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/micromagic/eterna/master/main/doc/eterna_2_0.xsd">
+  <factory>
+    <objs>
+      
+    </objs>
+  </factory>
+</eterna-config>

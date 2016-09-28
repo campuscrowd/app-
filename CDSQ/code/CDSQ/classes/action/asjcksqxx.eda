@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="按时间查看申请信息" displayRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" displayRefInclude="SQBH,HDNR,ZRR,SQDW,LXFS,HDRQ,HDSJ,HDDD,ZYMJ,ZYPSL,ZBSLJCC,QTYQ,HDLX,SQSJ" displayRefPath="src/datamodel/sj/T_CDSQ_CDSQB.edm" displayRefPrj="CDSQ" name="asjcksqxx" paramRef="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" paramRefInclude="SQBH,WID,HDNR,ZRR,SQDW,LXFS,HDRQ,HDSJ,HDDD,ZYMJ,ZYPSL,ZBSLJCC,QTYQ,HDLX,SQSJ,SQRGH" paramRefPath="src/datamodel/sj/T_CDSQ_CDSQB.edm" paramRefPrj="cdsq" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from T_CDSQ_CDSQB&#xD;
+#sub[where $]&#xD;
+order by SQSJ desc</sql>
+  </actionModel>
+</model:Model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="f9e29eee-975d-4bb1-bfbc-c037edf7093f">
+    <item name="HDRQ" type="String"/>
+    <item name="HDDD" type="String"/>
+  </bizModel>
+  <actionModel caption="获取已通过申请" displayRef="biz:ytgsq" displayRefInclude="HDRQ,ZRR,SQBH,SQDW,SQSJ,HDDD,DQZT,HDSJ" displayRefPath="src/parammodel/ytgsq.epm" displayRefPrj="CDSQ" name="hqytgsq" paramFixRef="f9e29eee-975d-4bb1-bfbc-c037edf7093f" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>SELECT * FROM  (SELECT  T_CDSQ_SPZT.SQBH,T_CDSQ_CDSQB.SQDW,T_CDSQ_CDSQB.ZRR,T_CDSQ_CDSQB.SQSJ,T_CDSQ_CDSQB.HDRQ,T_CDSQ_CDSQB.HDSJ,T_CDSQ_SPZT.DQZT,T_CDSQ_CDSQB.HDDD,ROW_NUMBER() OVER(PARTITION BY T_CDSQ_SPZT.SQBH ORDER BY SQSJ DESC ) AS RN FROM  T_CDSQ_SPZT &#xD;
+left join T_CDSQ_CDSQB on T_CDSQ_SPZT.SQBH=T_CDSQ_CDSQB.SQBH &#xD;
+)WHERE RN &lt;= 1 &#xD;
+ and HDRQ=?  and HDDD=? ORDER BY SQSJ DESC</sql>
+  </actionModel>
+</model:Model>

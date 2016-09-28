@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="aqfzrsp" desc="安全负责人审批" permissionLevel="">
+    <actions>
+      <action name="aqfzrcksqlb" ref="action:aqfzrcksqlb" url="src/action/aqfzrcksqlb.eda" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="asjcxaqfzrspxx" ref="action:asjcxaqfzrspxx" url="src/action/asjcxaqfzrspxx.eda" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="T_CDSQ_AQFZRSP_QUERY" ref="model:T_CDSQ_AQFZRSP.QUERY" url="src/datamodel/sj/T_CDSQ_AQFZRSP.edm" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="T_CDSQ_CDSQB_QUERY" ref="model:T_CDSQ_CDSQB.QUERY" url="src/datamodel/sj/T_CDSQ_CDSQB.edm" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="T_CDSQ_SPZT_QUERY" ref="model:T_CDSQ_SPZT.QUERY" url="src/datamodel/sj/T_CDSQ_SPZT.edm" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="tjaqfzrsp" ref="action:tjaqfzrsp" url="src/actionflow/tjaqfzrsp.aflow" multiple="false" prjRef="cdsq" canAccess="true"/>
+      <action name="asjcksqxx" ref="action:asjcksqxx" url="src/action/asjcksqxx.eda" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="cxsyspxx" ref="action:cxsyspxx" url="src/action/cxsyspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="hqshyjmx" ref="action:hqshyjmx" url="src/action/hqshyjmx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="fhsqbmx" ref="action:fhsqbmx" url="src/action/fhsqbmx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

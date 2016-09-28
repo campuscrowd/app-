@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="sqxx" desc="申请信息" permissionLevel="">
+    <params/>
+    <actions>
+      <action name="T_CDSQ_CDSQB_QUERY" ref="model:T_CDSQ_CDSQB.QUERY" url="src/datamodel/sj/T_CDSQ_CDSQB.edm" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="T_CDSQ_DW_QUERY" ref="model:T_CDSQ_DW.QUERY" url="src/datamodel/zd/T_CDSQ_DW.edm" multiple="false" prjRef="cdsq" canAccess="true"/>
+      <action name="tjsqxx" ref="action:tjsqxx" url="src/actionflow/tjsqxx.aflow" multiple="false" prjRef="cdsq" canAccess="true"/>
+      <action name="cksqlb" ref="action:cksqlb" url="src/action/cksqlb.eda" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="asjcxaqfzrspxx" ref="action:asjcxaqfzrspxx" url="src/action/asjcxaqfzrspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="asjcxbwcldspxx" ref="action:asjcxbwcldspxx" url="src/action/asjcxbwcldspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="asjcxbwcspxx" ref="action:asjcxbwcspxx" url="src/action/asjcxbwcspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="asjcxstzdlsspxx" ref="action:asjcxstzdlsspxx" url="src/action/asjcxstzdlsspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="asjcxtwfzrspxx" ref="action:asjcxtwfzrspxx" url="src/action/asjcxtwfzrspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="asjcxxgcspxx" ref="action:asjcxxgcspxx" url="src/action/asjcxxgcspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_AQFZRSP_QUERY" ref="model:T_CDSQ_AQFZRSP.QUERY" url="src/datamodel/sj/T_CDSQ_AQFZRSP.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_BWCLDSP_QUERY" ref="model:T_CDSQ_BWCLDSP.QUERY" url="src/datamodel/sj/T_CDSQ_BWCLDSP.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_BWCSP_QUERY" ref="model:T_CDSQ_BWCSP.QUERY" url="src/datamodel/sj/T_CDSQ_BWCSP.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_SPZT_QUERY" ref="model:T_CDSQ_SPZT.QUERY" url="src/datamodel/sj/T_CDSQ_SPZT.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_STZDLSSP_QUERY" ref="model:T_CDSQ_STZDLSSP.QUERY" url="src/datamodel/sj/T_CDSQ_STZDLSSP.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_TWFZRSP_QUERY" ref="model:T_CDSQ_TWFZRSP.QUERY" url="src/datamodel/sj/T_CDSQ_TWFZRSP.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_XGCLDSP_QUERY" ref="model:T_CDSQ_XGCLDSP.QUERY" url="src/datamodel/sj/T_CDSQ_XGCLDSP.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_YHXX_QUERY" ref="model:T_CDSQ_YHXX.QUERY" url="src/datamodel/sj/T_CDSQ_YHXX.edm" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="zxtjsqxx" ref="action:zxtjsqxx" url="src/actionflow/zxtjsqxx.aflow" multiple="false" prjRef="CDSQ" canAccess="true"/>
+      <action name="asjcksqxx" ref="action:asjcksqxx" url="src/action/asjcksqxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="cxsyspxx" ref="action:cxsyspxx" url="src/action/cxsyspxx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="T_CDSQ_JTSJ_QUERY" ref="model:T_CDSQ_JTSJ.QUERY" url="src/datamodel/zd/T_CDSQ_JTSJ.edm" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="hqdtytgsp" ref="action:hqdtytgsp" url="src/actionflow/hqdtytgsp.aflow" multiple="false" prjRef="CDSQ" canAccess="true"/>
+      <action name="hqdtytgspxx" ref="action:hqdtytgspxx" url="src/actionflow/hqdtytgspxx.aflow" multiple="true" prjRef="CDSQ" canAccess="true"/>
+      <action name="fhsqbmx" ref="action:fhsqbmx" url="src/action/fhsqbmx.eda" multiple="true" prjRef="CDSQ" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

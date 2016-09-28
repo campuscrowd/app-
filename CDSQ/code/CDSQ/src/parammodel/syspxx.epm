@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="syspxx" order="SPHJ,SQBH,SFTY,SHYJ,SHR,SQBH_1,SFTY_1,SHYJ_1,SHR_1,SQBH_2,SFTY_2,SHYJ_2,SHR_2,SQBH_3,SFTY_3,SHYJ_3,SHR_3,SFTY_4,SHYJ_4,SHR_4,SQBH_4,SQBH_5,SFTY_5,SHYJ_5,SHR_5,HDNR,SQSJ,SHSJ,SHSJ_1,SHSJ_2,SHSJ_3,SHSJ_4,SHSJ_5,SQBH_6">
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_AQFZRSP.edm" include="SQBH:SQBH,SFTY:SFTY,SHYJ:SHYJ,SHR:SHR,SHSJ:SHSJ" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_AQFZRSP" prjRef="CDSQ" tableAlias="T_CDSQ_AQFZRSP">
+      <item groupName="分管安全负责人审批" name="SQBH" originName="SQBH"/>
+      <item groupName="分管安全负责人审批" name="SFTY" originName="SFTY"/>
+      <item groupName="分管安全负责人审批" name="SHYJ" originName="SHYJ"/>
+      <item groupName="分管安全负责人审批" name="SHR" originName="SHR"/>
+      <item groupName="分管安全负责人审批" name="SHSJ" originName="SHSJ"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_BWCLDSP.edm" include="SQBH:SQBH_1,SFTY:SFTY_1,SHYJ:SHYJ_1,SHR:SHR_1,SHSJ:SHSJ_1" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_BWCLDSP" prjRef="CDSQ" tableAlias="T_CDSQ_BWCLDSP">
+      <item groupName="保卫处领导审批" name="SQBH_1" originName="SQBH"/>
+      <item groupName="保卫处领导审批" name="SFTY_1" originName="SFTY"/>
+      <item groupName="保卫处领导审批" name="SHYJ_1" originName="SHYJ"/>
+      <item groupName="保卫处领导审批" name="SHR_1" originName="SHR"/>
+      <item groupName="保卫处领导审批" name="SHSJ_1" originName="SHSJ"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_BWCSP.edm" include="SQBH:SQBH_2,SFTY:SFTY_2,SHYJ:SHYJ_2,SHR:SHR_2,SHSJ:SHSJ_2" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_BWCSP" prjRef="CDSQ" tableAlias="T_CDSQ_BWCSP">
+      <item groupName="保卫处审批" name="SQBH_2" originName="SQBH"/>
+      <item groupName="保卫处审批" name="SFTY_2" originName="SFTY"/>
+      <item groupName="保卫处审批" name="SHYJ_2" originName="SHYJ"/>
+      <item groupName="保卫处审批" name="SHR_2" originName="SHR"/>
+      <item groupName="保卫处审批" name="SHSJ_2" originName="SHSJ"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_STZDLSSP.edm" include="SQBH:SQBH_3,SFTY:SFTY_3,SHYJ:SHYJ_3,SHR:SHR_3,SHSJ:SHSJ_3" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_STZDLSSP" prjRef="CDSQ" tableAlias="T_CDSQ_STZDLSSP">
+      <item groupName="社团指导老师审批" name="SQBH_3" originName="SQBH"/>
+      <item groupName="社团指导老师审批" name="SFTY_3" originName="SFTY"/>
+      <item groupName="社团指导老师审批" name="SHYJ_3" originName="SHYJ"/>
+      <item groupName="社团指导老师审批" name="SHR_3" originName="SHR"/>
+      <item groupName="社团指导老师审批" name="SHSJ_3" originName="SHSJ"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_TWFZRSP.edm" include="SFTY:SFTY_4,SHYJ:SHYJ_4,SHR:SHR_4,SQBH:SQBH_4,SHSJ:SHSJ_4" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_TWFZRSP" prjRef="CDSQ" tableAlias="T_CDSQ_TWFZRSP">
+      <item groupName="团委负责人审批" name="SFTY_4" originName="SFTY"/>
+      <item groupName="团委负责人审批" name="SHYJ_4" originName="SHYJ"/>
+      <item groupName="团委负责人审批" name="SHR_4" originName="SHR"/>
+      <item groupName="团委负责人审批" name="SQBH_4" originName="SQBH"/>
+      <item groupName="团委负责人审批" name="SHSJ_4" originName="SHSJ"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_CDSQB.edm" include="HDNR:HDNR,SQSJ:SQSJ,SQBH:SQBH_6" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" prjRef="CDSQ" tableAlias="T_CDSQ_CDSQB">
+      <item groupName="场地申请" name="HDNR" originName="HDNR"/>
+      <item groupName="场地申请" name="SQSJ" originName="SQSJ"/>
+      <item groupName="场地申请" name="SQBH_6" originName="SQBH"/>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_XGCLDSP.edm" include="SQBH:SQBH_5,SFTY:SFTY_5,SHYJ:SHYJ_5,SHR:SHR_5,SHSJ:SHSJ_5" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_XGCLDSP" prjRef="CDSQ" tableAlias="T_CDSQ_XGCLDSP">
+      <item groupName="院系学工处领导审批" name="SQBH_5" originName="SQBH"/>
+      <item groupName="院系学工处领导审批" name="SFTY_5" originName="SFTY"/>
+      <item groupName="院系学工处领导审批" name="SHYJ_5" originName="SHYJ"/>
+      <item groupName="院系学工处领导审批" name="SHR_5" originName="SHR"/>
+      <item groupName="院系学工处领导审批" name="SHSJ_5" originName="SHSJ"/>
+    </dataModelRef>
+    <item caption="审批环节" colName="SPHJ" custom="true" foreignName="SPHJ" length="2" name="SPHJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

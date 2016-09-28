@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="tgsqsl" order="SQSL">
+    <item caption="申请数量" colName="SQSL" custom="true" length="20" name="SQSL" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

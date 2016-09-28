@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="xyswhdcdpz" desc="校园室外活动场地配置" permissionLevel="">
+    <actions>
+      <action name="T_CDSQ_CDXX_QUERY" ref="model:T_CDSQ_CDXX.QUERY" url="src/datamodel/sj/T_CDSQ_CDXX.edm" multiple="true" prjRef="cdsq" canAccess="true"/>
+      <action name="T_CDSQ_CDXX_SAVE" ref="model:T_CDSQ_CDXX.SAVE" url="src/datamodel/sj/T_CDSQ_CDXX.edm" multiple="false" prjRef="cdsq" canAccess="true"/>
+      <action name="T_CDSQ_CDXX_MODIFY" ref="model:T_CDSQ_CDXX.MODIFY" url="src/datamodel/sj/T_CDSQ_CDXX.edm" multiple="false" prjRef="cdsq" canAccess="true">
+        <condition itemName="WID" mustExists="true"/>
+      </action>
+    </actions>
+  </page>
+</page:Pages>

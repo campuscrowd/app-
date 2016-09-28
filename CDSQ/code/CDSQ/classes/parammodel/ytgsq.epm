@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="ytgsq" order="HDRQ,ZRR,SQBH,SQDW,SQSJ,HDDD,DQZT,HDSJ">
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_CDSQB.edm" include="ZRR:ZRR,SQBH:SQBH,SQDW:SQDW,SQSJ:SQSJ,HDDD:HDDD,HDRQ:HDRQ,HDSJ:HDSJ" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_CDSQB" prjRef="CDSQ" tableAlias="T_CDSQ_CDSQB">
+      <item caption="申请人" groupName="场地申请" name="ZRR" originName="ZRR">
+        <attribute name="web.grid.width" value="100px"/>
+      </item>
+      <item groupName="场地申请" name="SQBH" originName="SQBH"/>
+      <item groupName="场地申请" name="SQDW" originName="SQDW">
+        <attribute name="web.grid.width" value="150px"/>
+      </item>
+      <item groupName="场地申请" name="SQSJ" originName="SQSJ">
+        <attribute name="web.grid.width" value="150px"/>
+      </item>
+      <item groupName="场地申请" name="HDDD" originName="HDDD">
+        <attribute name="web.grid.width" value="115px"/>
+      </item>
+      <item groupName="场地申请" name="HDRQ" originName="HDRQ">
+        <attribute name="web.grid.width" value="100px"/>
+      </item>
+      <item groupName="场地申请" name="HDSJ" originName="HDSJ">
+        <attribute name="web.grid.width" value="100px"/>
+      </item>
+    </dataModelRef>
+    <dataModelRef edmRef="src/datamodel/sj/T_CDSQ_SPZT.edm" include="DQZT:DQZT" modelName="model:DB_CDSQ_BIZ_BASE/T_CDSQ_SPZT" prjRef="CDSQ" tableAlias="T_CDSQ_SPZT">
+      <item caption="当前状态" groupName="场地申请" name="DQZT" originName="DQZT">
+        <attribute name="useDicType" value="toDisplay"/>
+        <attribute name="dic" value="29dca74f-faf4-431f-abb6-1d9f3af322e1"/>
+        <attribute name="web.grid.width" value="150px"/>
+      </item>
+    </dataModelRef>
+  </bizModel>
+</model:Model>
